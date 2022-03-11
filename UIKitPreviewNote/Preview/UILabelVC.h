@@ -1,5 +1,5 @@
 //
-//  UILabelStringViewController.h
+//  UILabelVC.h
 //  UIKitPreviewNote
 //
 //  Created by chenyehong on 2022/3/11.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UILabelStringViewController : UIViewController
+@interface UILabelVC : UIViewController
 
 @end
 

@@ -71,15 +71,6 @@
     self.value = sender.value;
     [self refreshUI];
     self.valueChageBlock(sender.value);
-    
-    NSInteger va = 20;
-    NSLog(@"1 va = %ld", va);
-    [self text:&va];
-    NSLog(@"2 va = %ld", va);
-}
-
--(void)text: (NSInteger*)val{
-    *val = 50;
 }
 
 /*

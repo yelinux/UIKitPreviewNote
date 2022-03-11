@@ -12,13 +12,14 @@
 		810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6027DAF74800BFF101 /* SettingKeyVC.m */; };
 		810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */; };
 		810C2C6827DB280A00BFF101 /* SettingNumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */; };
+		810C2C6C27DB34A300BFF101 /* UIFontVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6B27DB34A300BFF101 /* UIFontVC.m */; };
 		8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214127DAEF2D0041E39D /* AppDelegate.m */; };
 		8172214827DAEF2D0041E39D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214727DAEF2D0041E39D /* ViewController.m */; };
 		8172214B27DAEF2D0041E39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214927DAEF2D0041E39D /* Main.storyboard */; };
 		8172214D27DAEF2E0041E39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8172214C27DAEF2E0041E39D /* Assets.xcassets */; };
 		8172215027DAEF2E0041E39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214E27DAEF2E0041E39D /* LaunchScreen.storyboard */; };
 		8172215327DAEF2E0041E39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172215227DAEF2E0041E39D /* main.m */; };
-		8172216727DAF3040041E39D /* UILabelStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172216527DAF3040041E39D /* UILabelStringViewController.m */; };
+		8172216727DAF3040041E39D /* UILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172216527DAF3040041E39D /* UILabelVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		810C2C6527DAF88300BFF101 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		810C2C6627DB280A00BFF101 /* SettingNumValueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingNumValueVC.h; sourceTree = "<group>"; };
 		810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingNumValueVC.m; sourceTree = "<group>"; };
+		810C2C6A27DB34A300BFF101 /* UIFontVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontVC.h; sourceTree = "<group>"; };
+		810C2C6B27DB34A300BFF101 /* UIFontVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontVC.m; sourceTree = "<group>"; };
 		8172213D27DAEF2D0041E39D /* UIKitPreviewNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPreviewNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8172214027DAEF2D0041E39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8172214127DAEF2D0041E39D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,8 +44,8 @@
 		8172214F27DAEF2E0041E39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8172215127DAEF2E0041E39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8172215227DAEF2E0041E39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8172216427DAF3040041E39D /* UILabelStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelStringViewController.h; sourceTree = "<group>"; };
-		8172216527DAF3040041E39D /* UILabelStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelStringViewController.m; sourceTree = "<group>"; };
+		8172216427DAF3040041E39D /* UILabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelVC.h; sourceTree = "<group>"; };
+		8172216527DAF3040041E39D /* UILabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelVC.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
 		AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.release.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.release.xcconfig"; sourceTree = "<group>"; };
 		CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPreviewNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +66,9 @@
 		810C2C5A27DAF5A600BFF101 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
-				8172216427DAF3040041E39D /* UILabelStringViewController.h */,
-				8172216527DAF3040041E39D /* UILabelStringViewController.m */,
+				810C2C6927DB348800BFF101 /* Font */,
+				8172216427DAF3040041E39D /* UILabelVC.h */,
+				8172216527DAF3040041E39D /* UILabelVC.m */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -82,6 +86,15 @@
 				810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		810C2C6927DB348800BFF101 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				810C2C6A27DB34A300BFF101 /* UIFontVC.h */,
+				810C2C6B27DB34A300BFF101 /* UIFontVC.m */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		8172213427DAEF2D0041E39D = {
@@ -255,8 +268,9 @@
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
 				810C2C6827DB280A00BFF101 /* SettingNumValueVC.m in Sources */,
-				8172216727DAF3040041E39D /* UILabelStringViewController.m in Sources */,
+				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
+				810C2C6C27DB34A300BFF101 /* UIFontVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
 				8172215327DAEF2E0041E39D /* main.m in Sources */,
 				810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */,

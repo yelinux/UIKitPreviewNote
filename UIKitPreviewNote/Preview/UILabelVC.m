@@ -5,20 +5,20 @@
 //  Created by chenyehong on 2022/3/11.
 //
 
-#import "UILabelStringViewController.h"
+#import "UILabelVC.h"
 #import "SettingVC.h"
 #import "SettingEnumValueVC.h"
 
-@interface UILabelStringViewController ()
+@interface UILabelVC ()
 
 @end
 
-@implementation UILabelStringViewController
+@implementation UILabelVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"UILabel NSString";
+    self.title = @"UILabel";
     self.view.backgroundColor = UIColor.whiteColor;
     
     UILabel *lb = UILabel.new;
