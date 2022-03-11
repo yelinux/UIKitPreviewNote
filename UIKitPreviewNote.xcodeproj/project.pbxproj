@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55DD647A3D574DC5AED6956D /* Pods_UIKitPreviewNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */; };
+		810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C5D27DAF67500BFF101 /* SettingVC.m */; };
+		810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6027DAF74800BFF101 /* SettingKeyVC.m */; };
+		810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */; };
+		810C2C6827DB280A00BFF101 /* SettingNumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */; };
 		8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214127DAEF2D0041E39D /* AppDelegate.m */; };
-		8172214527DAEF2D0041E39D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214427DAEF2D0041E39D /* SceneDelegate.m */; };
 		8172214827DAEF2D0041E39D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214727DAEF2D0041E39D /* ViewController.m */; };
 		8172214B27DAEF2D0041E39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214927DAEF2D0041E39D /* Main.storyboard */; };
 		8172214D27DAEF2E0041E39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8172214C27DAEF2E0041E39D /* Assets.xcassets */; };
 		8172215027DAEF2E0041E39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214E27DAEF2E0041E39D /* LaunchScreen.storyboard */; };
 		8172215327DAEF2E0041E39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172215227DAEF2E0041E39D /* main.m */; };
+		8172216727DAF3040041E39D /* UILabelStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172216527DAF3040041E39D /* UILabelStringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810C2C5C27DAF67500BFF101 /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		810C2C5D27DAF67500BFF101 /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		810C2C5F27DAF74800BFF101 /* SettingKeyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingKeyVC.h; sourceTree = "<group>"; };
+		810C2C6027DAF74800BFF101 /* SettingKeyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingKeyVC.m; sourceTree = "<group>"; };
+		810C2C6227DAF81A00BFF101 /* SettingEnumValueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingEnumValueVC.h; sourceTree = "<group>"; };
+		810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingEnumValueVC.m; sourceTree = "<group>"; };
+		810C2C6527DAF88300BFF101 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		810C2C6627DB280A00BFF101 /* SettingNumValueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingNumValueVC.h; sourceTree = "<group>"; };
+		810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingNumValueVC.m; sourceTree = "<group>"; };
 		8172213D27DAEF2D0041E39D /* UIKitPreviewNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPreviewNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8172214027DAEF2D0041E39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8172214127DAEF2D0041E39D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8172214327DAEF2D0041E39D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8172214427DAEF2D0041E39D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8172214627DAEF2D0041E39D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8172214727DAEF2D0041E39D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8172214A27DAEF2D0041E39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +41,11 @@
 		8172214F27DAEF2E0041E39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8172215127DAEF2E0041E39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8172215227DAEF2E0041E39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8172216427DAF3040041E39D /* UILabelStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelStringViewController.h; sourceTree = "<group>"; };
+		8172216527DAF3040041E39D /* UILabelStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelStringViewController.m; sourceTree = "<group>"; };
+		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
+		AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.release.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.release.xcconfig"; sourceTree = "<group>"; };
+		CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPreviewNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +53,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DD647A3D574DC5AED6956D /* Pods_UIKitPreviewNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810C2C5A27DAF5A600BFF101 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				8172216427DAF3040041E39D /* UILabelStringViewController.h */,
+				8172216527DAF3040041E39D /* UILabelStringViewController.m */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		810C2C5B27DAF60700BFF101 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				810C2C5C27DAF67500BFF101 /* SettingVC.h */,
+				810C2C5D27DAF67500BFF101 /* SettingVC.m */,
+				810C2C5F27DAF74800BFF101 /* SettingKeyVC.h */,
+				810C2C6027DAF74800BFF101 /* SettingKeyVC.m */,
+				810C2C6227DAF81A00BFF101 /* SettingEnumValueVC.h */,
+				810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */,
+				810C2C6627DB280A00BFF101 /* SettingNumValueVC.h */,
+				810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		8172213427DAEF2D0041E39D = {
 			isa = PBXGroup;
 			children = (
 				8172213F27DAEF2D0041E39D /* UIKitPreviewNote */,
 				8172213E27DAEF2D0041E39D /* Products */,
+				CDCB567E645793DED671ECDB /* Pods */,
+				97632E9EAD8BCAAC20DE20A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +105,10 @@
 		8172213F27DAEF2D0041E39D /* UIKitPreviewNote */ = {
 			isa = PBXGroup;
 			children = (
+				810C2C5B27DAF60700BFF101 /* Tool */,
+				810C2C5A27DAF5A600BFF101 /* Preview */,
 				8172214027DAEF2D0041E39D /* AppDelegate.h */,
 				8172214127DAEF2D0041E39D /* AppDelegate.m */,
-				8172214327DAEF2D0041E39D /* SceneDelegate.h */,
-				8172214427DAEF2D0041E39D /* SceneDelegate.m */,
 				8172214627DAEF2D0041E39D /* ViewController.h */,
 				8172214727DAEF2D0041E39D /* ViewController.m */,
 				8172214927DAEF2D0041E39D /* Main.storyboard */,
@@ -72,8 +116,26 @@
 				8172214E27DAEF2E0041E39D /* LaunchScreen.storyboard */,
 				8172215127DAEF2E0041E39D /* Info.plist */,
 				8172215227DAEF2E0041E39D /* main.m */,
+				810C2C6527DAF88300BFF101 /* PrefixHeader.pch */,
 			);
 			path = UIKitPreviewNote;
+			sourceTree = "<group>";
+		};
+		97632E9EAD8BCAAC20DE20A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDCB567E645793DED671ECDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */,
+				AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8172215627DAEF2E0041E39D /* Build configuration list for PBXNativeTarget "UIKitPreviewNote" */;
 			buildPhases = (
+				EBE25A358AC32A78E7EFD2C6 /* [CP] Check Pods Manifest.lock */,
 				8172213927DAEF2D0041E39D /* Sources */,
 				8172213A27DAEF2D0041E39D /* Frameworks */,
 				8172213B27DAEF2D0041E39D /* Resources */,
+				51F9B54DBC8AF74203BB7F32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,15 +205,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51F9B54DBC8AF74203BB7F32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBE25A358AC32A78E7EFD2C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitPreviewNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8172213927DAEF2D0041E39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
+				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
+				810C2C6827DB280A00BFF101 /* SettingNumValueVC.m in Sources */,
+				8172216727DAF3040041E39D /* UILabelStringViewController.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
 				8172215327DAEF2E0041E39D /* main.m in Sources */,
-				8172214527DAEF2D0041E39D /* SceneDelegate.m in Sources */,
+				810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +399,15 @@
 		};
 		8172215727DAEF2E0041E39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C77C4Z7YUK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/UIKitPreviewNote/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitPreviewNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyh.UIKitPreviewNote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syc.saas.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,11 +429,15 @@
 		};
 		8172215827DAEF2E0041E39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C77C4Z7YUK;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/UIKitPreviewNote/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitPreviewNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyh.UIKitPreviewNote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.syc.saas.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

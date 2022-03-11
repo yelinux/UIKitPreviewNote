@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+///com.cyh.UIKitPreviewNote
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 

@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "UILabelStringViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"UIKit 预览&笔记";
+}
+- (IBAction)click1:(id)sender {
+    UILabelStringViewController *vc = [[UILabelStringViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
