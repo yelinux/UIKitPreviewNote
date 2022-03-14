@@ -30,10 +30,21 @@
     
     UIStackView *stackView = [[UIStackView alloc] initWithArrangedSubviews:@[lb, vc.view]];
     stackView.axis = UILayoutConstraintAxisVertical;
-    stackView.distribution = UIStackViewDistributionFillEqually;
     [self.view addSubview:stackView];
     [stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.insets(UIEdgeInsetsMake(0, 0, self.view.window.safeAreaInsets.bottom, 0));
+        if (@available(iOS 11.0, *)) {
+            make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop);
+            make.left.mas_equalTo(self.view.mas_safeAreaLayoutGuideLeft);
+            make.right.mas_equalTo(self.view.mas_safeAreaLayoutGuideRight);
+            make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
+        } else {
+            // Fallback on earlier versions
+            make.edges.offset(0);
+        }
+    }];
+    
+    [lb mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(128);
     }];
     
     __weak UILabel *wlb = lb;
@@ -91,6 +102,12 @@
                                         stepValue:1
                                         valueChage:^(double value) {
                 wlb.numberOfLines = value;
+            }];
+            [keyModels addObject:keyModel];
+        }
+        {
+            SettingKeyModel *keyModel = [SettingKeyVC createFomtModelWithPtName:@"font" valueChage:^(UIFont * _Nonnull font) {
+                wlb.font = font;
             }];
             [keyModels addObject:keyModel];
         }

@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
                                  maximumValue: (double)maximumValue
                                     stepValue: (double)stepValue
                                    valueChage: (void(^)(double value))block;
++(SettingKeyModel*)createFomtModelWithPtName: (NSString*)name
+                                  valueChage: (void(^)(UIFont *font))block;
 
 @end
 

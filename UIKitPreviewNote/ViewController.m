@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "UIFontFamilysVC.h"
 #import "UILabelVC.h"
+#import "UIFontSystemVC.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,13 @@
     self.title = @"UIKit 预览&笔记";
 }
 
-- (IBAction)clickFont:(id)sender {
+- (IBAction)clickFontSystem:(id)sender {
+    UIFontSystemVC *vc = [[UIFontSystemVC alloc] init];
+    vc.title = @"UIFont system";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickFontFamilys:(id)sender {
     UIFontFamilysVC *vc = [[UIFontFamilysVC alloc] init];
     vc.title = @"UIFont familyNames";
     [self.navigationController pushViewController:vc animated:YES];

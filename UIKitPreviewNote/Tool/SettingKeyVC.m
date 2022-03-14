@@ -8,6 +8,7 @@
 #import "SettingKeyVC.h"
 #import "SettingEnumValueVC.h"
 #import "SettingNumValueVC.h"
+#import "SettingFontVC.h"
 
 @interface SettingKeyVC ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -49,6 +50,19 @@
                                                 maximumValue:maximumValue
                                                    stepValue:stepValue
                                                   valueChage:block];
+    };
+    return keyModel;
+}
+
++(SettingKeyModel*)createFomtModelWithPtName: (NSString*)name
+                                  valueChage: (void(^)(UIFont *font))block{
+    SettingKeyModel *keyModel = SettingKeyModel.new;
+    keyModel.propertyName = name;
+    keyModel.selectBlock = ^{
+        SettingFontVC *vc = [[SettingFontVC alloc] init];
+        vc.title = name;
+        vc.valueChange = block;
+        return vc;
     };
     return keyModel;
 }

@@ -16,7 +16,7 @@
         lb.numberOfLines = 0;
         [self.contentView addSubview:lb];
         [lb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.insets(UIEdgeInsetsMake(12, 12, 12, 12));
+            make.edges.insets(UIEdgeInsetsZero);
         }];
         _lb = lb;
     }

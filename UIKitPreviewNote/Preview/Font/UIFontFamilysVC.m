@@ -139,9 +139,15 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (self.clickBlock) {
+        MyFontGroup *group = [_displayGroups objectAtIndex:indexPath.section];
+        NSString *fontName = [group.fontNames objectAtIndex:indexPath.row];
+        self.clickBlock([UIFont fontWithName:fontName size:self.fontSize]);
+    }
 }
 
 -(NSAttributedString*)convertStr: (NSString*)str keyword: (NSString*)keyword{
+    str = [str stringByAppendingFormat:@" %f", self.fontSize];
     NSMutableAttributedString *attrMutStr = [[NSMutableAttributedString alloc] initWithString:str];
     if (keyword.length > 0) {
         NSString *regex = keyword;

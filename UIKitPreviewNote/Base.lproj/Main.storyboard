@@ -20,18 +20,26 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lJK-T0-oTH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-dd-UGC">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
                                                 <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="UIFont system"/>
+                                                <connections>
+                                                    <action selector="clickFontSystem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZUH-nd-wew"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDW-9X-edD">
+                                                <rect key="frame" x="0.0" y="31" width="414" height="31"/>
+                                                <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="UIFont familyNames"/>
                                                 <connections>
-                                                    <action selector="clickFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFa-Bk-tVA"/>
+                                                    <action selector="clickFontFamilys:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDr-bB-2bM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57z-Rr-b0J">
-                                                <rect key="frame" x="0.0" y="31" width="414" height="31"/>
+                                                <rect key="frame" x="0.0" y="62" width="414" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="UILabel"/>
                                                 <connections>
