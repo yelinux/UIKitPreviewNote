@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "UIFontVC.h"
+#import "UIFontFamilysVC.h"
 #import "UILabelVC.h"
 
 @interface ViewController ()
@@ -22,8 +22,8 @@
 }
 
 - (IBAction)clickFont:(id)sender {
-    UIFontVC *vc = [[UIFontVC alloc] init];
-    vc.title = @"UIFont";
+    UIFontFamilysVC *vc = [[UIFontFamilysVC alloc] init];
+    vc.title = @"UIFont familyNames";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -31,6 +31,5 @@
     UILabelVC *vc = [[UILabelVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 @end
