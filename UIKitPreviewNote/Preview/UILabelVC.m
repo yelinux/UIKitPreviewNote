@@ -106,8 +106,14 @@
             [keyModels addObject:keyModel];
         }
         {
-            SettingKeyModel *keyModel = [SettingKeyVC createFomtModelWithPtName:@"font" valueChage:^(UIFont * _Nonnull font) {
+            SettingKeyModel *keyModel = [SettingKeyVC createFontModelWithPtName:@"font" valueChage:^(UIFont * _Nonnull font) {
                 wlb.font = font;
+            }];
+            [keyModels addObject:keyModel];
+        }
+        {
+            SettingKeyModel *keyModel = [SettingKeyVC createColorModelWithPtName:@"textColor" value:wlb.textColor valueChage:^(UIColor * _Nonnull color) {
+                wlb.textColor = color;
             }];
             [keyModels addObject:keyModel];
         }

@@ -11,6 +11,7 @@
 		81083F4627DECEE6002E954F /* LBTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81083F4527DECEE6002E954F /* LBTableViewHeader.m */; };
 		81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81083F4827DED771002E954F /* UIFontSystemVC.m */; };
 		81083F4C27DEE3C9002E954F /* SettingFontVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81083F4B27DEE3C9002E954F /* SettingFontVC.m */; };
+		81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81083F5227DF0F75002E954F /* SettingColorVC.m */; };
 		810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C5D27DAF67500BFF101 /* SettingVC.m */; };
 		810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6027DAF74800BFF101 /* SettingKeyVC.m */; };
 		810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */; };
@@ -32,6 +33,8 @@
 		81083F4827DED771002E954F /* UIFontSystemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontSystemVC.m; sourceTree = "<group>"; };
 		81083F4A27DEE3C9002E954F /* SettingFontVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingFontVC.h; sourceTree = "<group>"; };
 		81083F4B27DEE3C9002E954F /* SettingFontVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingFontVC.m; sourceTree = "<group>"; };
+		81083F5127DF0F75002E954F /* SettingColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingColorVC.h; sourceTree = "<group>"; };
+		81083F5227DF0F75002E954F /* SettingColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingColorVC.m; sourceTree = "<group>"; };
 		810C2C5C27DAF67500BFF101 /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		810C2C5D27DAF67500BFF101 /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		810C2C5F27DAF74800BFF101 /* SettingKeyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingKeyVC.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				810C2C6727DB280A00BFF101 /* SettingNumValueVC.m */,
 				81083F4A27DEE3C9002E954F /* SettingFontVC.h */,
 				81083F4B27DEE3C9002E954F /* SettingFontVC.m */,
+				81083F5127DF0F75002E954F /* SettingColorVC.h */,
+				81083F5227DF0F75002E954F /* SettingColorVC.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
 				810C2C6827DB280A00BFF101 /* SettingNumValueVC.m in Sources */,
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
+				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,

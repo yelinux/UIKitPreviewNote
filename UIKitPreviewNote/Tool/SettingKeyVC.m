@@ -9,6 +9,7 @@
 #import "SettingEnumValueVC.h"
 #import "SettingNumValueVC.h"
 #import "SettingFontVC.h"
+#import "SettingColorVC.h"
 
 @interface SettingKeyVC ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -54,13 +55,28 @@
     return keyModel;
 }
 
-+(SettingKeyModel*)createFomtModelWithPtName: (NSString*)name
++(SettingKeyModel*)createFontModelWithPtName: (NSString*)name
                                   valueChage: (void(^)(UIFont *font))block{
     SettingKeyModel *keyModel = SettingKeyModel.new;
     keyModel.propertyName = name;
     keyModel.selectBlock = ^{
         SettingFontVC *vc = [[SettingFontVC alloc] init];
         vc.title = name;
+        vc.valueChange = block;
+        return vc;
+    };
+    return keyModel;
+}
+
++(SettingKeyModel*)createColorModelWithPtName: (NSString*)name
+                                        value: (UIColor*)color
+                                   valueChage: (void(^)(UIColor *color))block{
+    SettingKeyModel *keyModel = SettingKeyModel.new;
+    keyModel.propertyName = name;
+    keyModel.selectBlock = ^{
+        SettingColorVC *vc = [[SettingColorVC alloc] init];
+        vc.title = name;
+        vc.color = color;
         vc.valueChange = block;
         return vc;
     };
