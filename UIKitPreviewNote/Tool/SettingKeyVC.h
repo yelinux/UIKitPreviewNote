@@ -20,17 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSArray <SettingKeyModel*> *keyModels;
 @property (nonatomic, copy) NSArray <SettingKeyModel *> *(^getModelBlock)(void);
-+(SettingKeyModel *)createEnumKModelWithPtName: (NSString*)name
-                                     descArray: (NSArray*)descArray
-                                        values: (NSArray*)values
-                                  defaultIndex: (NSInteger)defaultIndex
-                                  selectChange: (void(^)(NSInteger value))block;
-+(SettingKeyModel*)createStepKModelWithPtName: (NSString*)name
-                                        value: (double)value
-                                 minimumValue: (double)minimumValue
-                                 maximumValue: (double)maximumValue
-                                    stepValue: (double)stepValue
-                                   valueChage: (void(^)(double value))block;
 +(SettingKeyModel*)createFontModelWithPtName: (NSString*)name
                                   valueChage: (void(^)(UIFont *font))block;
 +(SettingKeyModel*)createColorModelWithPtName: (NSString*)name

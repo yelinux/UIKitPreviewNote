@@ -8,6 +8,7 @@
 #import "UILabelVC.h"
 #import "SettingVC.h"
 #import "SettingEnumValueVC.h"
+#import "SettingNumCell.h"
 
 @interface UILabelVC ()
 
@@ -62,11 +63,11 @@
                                 @(NSTextAlignmentJustified),
                                 @(NSTextAlignmentNatural)];
             NSInteger defaultIndex = [values indexOfObject:@(wlb.textAlignment)];
-            SettingKeyModel *keyModel = [SettingKeyVC createEnumKModelWithPtName:@"textAlignment"
-                                                                       descArray:desces
-                                                                          values:values
-                                                                    defaultIndex:defaultIndex
-                                                                    selectChange:^(NSInteger value) {
+            SettingKeyModel *keyModel = [SettingEnumValueVCModel createEnumKModelWithPtName:@"textAlignment"
+                                                                                  descArray:desces
+                                                                                     values:values
+                                                                               defaultIndex:defaultIndex
+                                                                               selectChange:^(NSInteger value) {
                 wlb.textAlignment = value;
             }];
             [keyModels addObject:keyModel];
@@ -85,22 +86,22 @@
                                 @(NSLineBreakByTruncatingTail),
                                 @(NSLineBreakByTruncatingMiddle)];
             NSInteger defaultIndex = [values indexOfObject:@(wlb.lineBreakMode)];
-            SettingKeyModel *keyModel = [SettingKeyVC createEnumKModelWithPtName:@"lineBreakMode"
-                                                                       descArray:desces
-                                                                          values:values
-                                                                    defaultIndex:defaultIndex
-                                                                    selectChange:^(NSInteger value) {
+            SettingKeyModel *keyModel = [SettingEnumValueVCModel createEnumKModelWithPtName:@"lineBreakMode"
+                                                                                  descArray:desces
+                                                                                     values:values
+                                                                               defaultIndex:defaultIndex
+                                                                               selectChange:^(NSInteger value) {
                 wlb.lineBreakMode = value;
             }];
             [keyModels addObject:keyModel];
         }
         {
-            SettingKeyModel *keyModel = [SettingKeyVC createStepKModelWithPtName:@"numberOfLines"
-                                        value:wlb.numberOfLines
-                                        minimumValue:0
-                                        maximumValue:100
-                                        stepValue:1
-                                        valueChage:^(double value) {
+            SettingNumCellModel *keyModel = [SettingNumCellModel createStepKModelWithPtName:@"numberOfLines"
+                                                                                      value:wlb.numberOfLines
+                                                                               minimumValue:0
+                                                                               maximumValue:100
+                                                                                  stepValue:1
+                                                                                 valueChage:^(double value) {
                 wlb.numberOfLines = value;
             }];
             [keyModels addObject:keyModel];

@@ -6,19 +6,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingKeyVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SettingEnumValueVC : UIViewController
+@interface SettingEnumValueVCModel : SettingKeyModel
 
 @property (nonatomic, copy) NSArray <NSString*> *values;
 @property (nonatomic, assign) NSInteger selectIndex;
-@property (nonatomic, copy) void(^clickBlock)(NSInteger index);
-+(SettingEnumValueVC *)createEnumKModelWithPtName: (NSString*)name
-                                        descArray: (NSArray*)descArray
-                                           values: (NSArray*)values
-                                     defaultIndex: (NSInteger)defaultIndex
-                                     selectChange: (void(^)(NSInteger value))block;
+
++(SettingEnumValueVCModel *)createEnumKModelWithPtName: (NSString*)name
+                                             descArray: (NSArray*)descArray
+                                                values: (NSArray*)values
+                                          defaultIndex: (NSInteger)defaultIndex
+                                          selectChange: (void(^)(NSInteger value))block;
+
+@end
+
+@interface SettingEnumValueVC : UIViewController
+
+@property (nonatomic, strong) SettingEnumValueVCModel *model;
 
 @end
 

@@ -7,6 +7,31 @@
 
 #import "SettingEnumValueVC.h"
 
+@interface SettingEnumValueVCModel()
+
+@property (nonatomic, copy) void(^clickBlock)(NSInteger index);
+
+@end
+
+@implementation SettingEnumValueVCModel
+
++(SettingEnumValueVCModel *)createEnumKModelWithPtName: (NSString*)name
+                                        descArray: (NSArray*)descArray
+                                           values: (NSArray*)values
+                                     defaultIndex: (NSInteger)defaultIndex
+                                     selectChange: (void(^)(NSInteger value))block{
+    SettingEnumValueVCModel *model = SettingEnumValueVCModel.new;
+    model.propertyName = name;
+    model.values = descArray;
+    model.selectIndex = [values indexOfObject:@(defaultIndex)];
+    model.clickBlock = ^(NSInteger index) {
+        block([[values objectAtIndex:index] integerValue]);
+    };
+    return model;
+}
+
+@end
+
 @interface SettingEnumValueVC ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -14,21 +39,6 @@
 @end
 
 @implementation SettingEnumValueVC
-
-+(SettingEnumValueVC *)createEnumKModelWithPtName: (NSString*)name
-                                        descArray: (NSArray*)descArray
-                                           values: (NSArray*)values
-                                     defaultIndex: (NSInteger)defaultIndex
-                                     selectChange: (void(^)(NSInteger value))block{
-    SettingEnumValueVC *vc = [[SettingEnumValueVC alloc] init];
-    vc.title = name;
-    vc.values = descArray;
-    vc.selectIndex = [values indexOfObject:@(defaultIndex)];
-    vc.clickBlock = ^(NSInteger index) {
-        block([[values objectAtIndex:index] integerValue]);
-    };
-    return vc;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,28 +55,22 @@
         make.edges.insets(UIEdgeInsetsZero);
     }];
     _tableView = tableView;
-}
-
--(void)setValues:(NSArray<NSString *> *)values{
-    _values = values;
-    [_tableView reloadData];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.selectIndex inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-    });
+    
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.model.selectIndex inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _values.count;
+    return self.model.values.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
-    cell.textLabel.text = [_values objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.model.values objectAtIndex:indexPath.row];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    self.clickBlock(indexPath.row);
+    self.model.clickBlock(indexPath.row);
 }
 
 /*
