@@ -59,6 +59,7 @@
         
         UILabel *lb = UILabel.new;
         lb.textColor = UIColor.blackColor;
+        lb.font = [UIFont systemFontOfSize:14];
         lb.numberOfLines = 0;
         [self.contentView addSubview:lb];
         [lb mas_makeConstraints:^(MASConstraintMaker *make) {

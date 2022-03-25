@@ -86,6 +86,7 @@
         return cell;
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+        cell.textLabel.font = [UIFont systemFontOfSize:14];
         cell.textLabel.numberOfLines = 0;
         if ([obj isKindOfClass:[SettingEnumValueVCModel class]]) {
             SettingEnumValueVCModel *keyModel = obj;

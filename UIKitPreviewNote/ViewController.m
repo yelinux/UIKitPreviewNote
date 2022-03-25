@@ -9,6 +9,7 @@
 #import "UIFontFamilysVC.h"
 #import "UILabelVC.h"
 #import "UIFontSystemVC.h"
+#import "NSAttributeStringVC.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,11 @@
 
 - (IBAction)click1:(id)sender {
     UILabelVC *vc = [[UILabelVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click2:(id)sender {
+    NSAttributeStringVC *vc = [[NSAttributeStringVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

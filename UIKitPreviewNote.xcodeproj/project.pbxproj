@@ -23,6 +23,7 @@
 		8172215027DAEF2E0041E39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214E27DAEF2E0041E39D /* LaunchScreen.storyboard */; };
 		8172215327DAEF2E0041E39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172215227DAEF2E0041E39D /* main.m */; };
 		8172216727DAF3040041E39D /* UILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172216527DAF3040041E39D /* UILabelVC.m */; };
+		817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */; };
 		8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179D0D727E1C93A0091D862 /* SettingNumCell.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		8172215227DAEF2E0041E39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8172216427DAF3040041E39D /* UILabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelVC.h; sourceTree = "<group>"; };
 		8172216527DAF3040041E39D /* UILabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelVC.m; sourceTree = "<group>"; };
+		817799B327E99D4B00BB90F3 /* NSAttributeStringVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAttributeStringVC.h; sourceTree = "<group>"; };
+		817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributeStringVC.m; sourceTree = "<group>"; };
 		8179D0D627E1C93A0091D862 /* SettingNumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingNumCell.h; sourceTree = "<group>"; };
 		8179D0D727E1C93A0091D862 /* SettingNumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingNumCell.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				810C2C6927DB348800BFF101 /* Font */,
 				8172216427DAF3040041E39D /* UILabelVC.h */,
 				8172216527DAF3040041E39D /* UILabelVC.m */,
+				817799B327E99D4B00BB90F3 /* NSAttributeStringVC.h */,
+				817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
+				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
 				81083F4C27DEE3C9002E954F /* SettingFontVC.m in Sources */,
