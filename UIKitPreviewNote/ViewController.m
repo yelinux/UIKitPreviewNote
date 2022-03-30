@@ -10,6 +10,7 @@
 #import "UILabelVC.h"
 #import "UIFontSystemVC.h"
 #import "NSAttributeStringVC.h"
+#import "UICollectionVC.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,11 @@
 
 - (IBAction)click2:(id)sender {
     NSAttributeStringVC *vc = [[NSAttributeStringVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click3:(id)sender {
+    UICollectionVC *vc = [[UICollectionVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

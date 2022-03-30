@@ -7,7 +7,7 @@ target 'UIKitPreviewNote' do
 
   # Pods for UIKitPreviewNote
 
-pod 'YHNavigationBar', :git => 'https://github.com/yelinux/YHNavigationBar.git'
+#pod 'YHNavigationBar', :git => 'https://github.com/yelinux/YHNavigationBar.git'
 pod 'Masonry'
 pod 'IQKeyboardManager'
 pod 'MLeaksFinder', :git => 'https://github.com/Tencent/MLeaksFinder'

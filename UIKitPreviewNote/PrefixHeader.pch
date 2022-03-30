@@ -12,4 +12,38 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <Masonry/Masonry.h>
 
+#define     SCREEN_SIZE                 [UIScreen mainScreen].bounds.size
+#define     SCREEN_WIDTH            SCREEN_SIZE.width
+#define     SCREEN_HEIGHT           SCREEN_SIZE.height
+
+// MARK: - safe area
+
+#define SAFE_MARGIN_TOP \
+({CGFloat top = 0;\
+if (@available(iOS 11.0, *)) {\
+top = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.top;\
+}\
+(top);})
+
+#define SAFE_MARGIN_BOTTOM \
+({CGFloat bottom = 0;\
+if (@available(iOS 11.0, *)) {\
+bottom = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;\
+}\
+(bottom);})
+
+#define SAFE_MARGIN_LEFT \
+({CGFloat left = 0;\
+if (@available(iOS 11.0, *)) {\
+left = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.left;\
+}\
+(left);})
+
+#define SAFE_MARGIN_RIGHT \
+({CGFloat right = 0;\
+if (@available(iOS 11.0, *)) {\
+right = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.right;\
+}\
+(right);})
+
 #endif /* PrefixHeader_pch */

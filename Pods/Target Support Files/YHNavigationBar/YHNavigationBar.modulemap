@@ -1,6 +1,0 @@
-framework module YHNavigationBar {
-  umbrella header "YHNavigationBar-umbrella.h"
-
-  export *
-  module * { export * }
-}

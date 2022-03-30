@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lJK-T0-oTH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-dd-UGC">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
@@ -52,6 +52,14 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="NSAttributeString"/>
                                                 <connections>
                                                     <action selector="click2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxL-8v-RLP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R39-e1-4AY">
+                                                <rect key="frame" x="0.0" y="124" width="414" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="UICollectionView"/>
+                                                <connections>
+                                                    <action selector="click3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjQ-Jc-SnD"/>
                                                 </connections>
                                             </button>
                                         </subviews>

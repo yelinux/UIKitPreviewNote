@@ -25,6 +25,9 @@
 		8172216727DAF3040041E39D /* UILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172216527DAF3040041E39D /* UILabelVC.m */; };
 		817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */; };
 		8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179D0D727E1C93A0091D862 /* SettingNumCell.m */; };
+		81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7827ED5D0800A8AFCF /* UICollectionVC.m */; };
+		81BC1F7C27ED5EA400A8AFCF /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7B27ED5EA300A8AFCF /* MyCollectionViewCell.m */; };
+		81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,12 @@
 		817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributeStringVC.m; sourceTree = "<group>"; };
 		8179D0D627E1C93A0091D862 /* SettingNumCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingNumCell.h; sourceTree = "<group>"; };
 		8179D0D727E1C93A0091D862 /* SettingNumCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingNumCell.m; sourceTree = "<group>"; };
+		81BC1F7727ED5D0800A8AFCF /* UICollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionVC.h; sourceTree = "<group>"; };
+		81BC1F7827ED5D0800A8AFCF /* UICollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionVC.m; sourceTree = "<group>"; };
+		81BC1F7A27ED5EA300A8AFCF /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		81BC1F7B27ED5EA300A8AFCF /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		81BC1F7D27ED66B300A8AFCF /* MyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
 		AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.release.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.release.xcconfig"; sourceTree = "<group>"; };
 		CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPreviewNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +99,7 @@
 		810C2C5A27DAF5A600BFF101 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				81BC1F7627ED5CEB00A8AFCF /* CollectionView */,
 				81083F4327DECEC3002E954F /* View */,
 				810C2C6927DB348800BFF101 /* Font */,
 				8172216427DAF3040041E39D /* UILabelVC.h */,
@@ -165,6 +175,19 @@
 				810C2C6527DAF88300BFF101 /* PrefixHeader.pch */,
 			);
 			path = UIKitPreviewNote;
+			sourceTree = "<group>";
+		};
+		81BC1F7627ED5CEB00A8AFCF /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				81BC1F7727ED5D0800A8AFCF /* UICollectionVC.h */,
+				81BC1F7827ED5D0800A8AFCF /* UICollectionVC.m */,
+				81BC1F7A27ED5EA300A8AFCF /* MyCollectionViewCell.h */,
+				81BC1F7B27ED5EA300A8AFCF /* MyCollectionViewCell.m */,
+				81BC1F7D27ED66B300A8AFCF /* MyCollectionViewFlowLayout.h */,
+				81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		97632E9EAD8BCAAC20DE20A2 /* Frameworks */ = {
@@ -301,6 +324,7 @@
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
+				81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */,
 				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
@@ -308,9 +332,11 @@
 				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
+				81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */,
 				81083F4C27DEE3C9002E954F /* SettingFontVC.m in Sources */,
 				8172215327DAEF2E0041E39D /* main.m in Sources */,
 				81083F4627DECEE6002E954F /* LBTableViewHeader.m in Sources */,
+				81BC1F7C27ED5EA400A8AFCF /* MyCollectionViewCell.m in Sources */,
 				810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,13 +2,11 @@ PODS:
   - IQKeyboardManager (6.5.9)
   - Masonry (1.1.0)
   - MLeaksFinder (1.0.0)
-  - YHNavigationBar (1.0.2)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - Masonry
   - MLeaksFinder (from `https://github.com/Tencent/MLeaksFinder`)
-  - YHNavigationBar (from `https://github.com/yelinux/YHNavigationBar.git`)
 
 SPEC REPOS:
   trunk:
@@ -18,23 +16,17 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   MLeaksFinder:
     :git: https://github.com/Tencent/MLeaksFinder
-  YHNavigationBar:
-    :git: https://github.com/yelinux/YHNavigationBar.git
 
 CHECKOUT OPTIONS:
   MLeaksFinder:
     :commit: dda7088f1bbe9d1d07e730d37a16413dffa4747a
     :git: https://github.com/Tencent/MLeaksFinder
-  YHNavigationBar:
-    :commit: 14af79d999935d60bfe1247977833aaba4cdffa7
-    :git: https://github.com/yelinux/YHNavigationBar.git
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 89eb3142bf1bbd0a3d1849543b629399c5da74c5
-  YHNavigationBar: ef860b914f216a49608b6b9d3fe3a71acd8674fb
 
-PODFILE CHECKSUM: dab8970e94566de4f906d9f2195978d58595fa6d
+PODFILE CHECKSUM: 28f55f3abe5a565ac657bfed8be8a22847fe1771
 
 COCOAPODS: 1.11.2
