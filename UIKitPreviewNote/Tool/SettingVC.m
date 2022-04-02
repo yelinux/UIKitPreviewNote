@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.interactivePopType = YHNavigationInteractivePopTypeNone;
+    self.yh_interactivePopType = YHNavigationInteractivePopTypeNone;
     self.navigationBar.translucent = NO;
     if (@available(iOS 13.0, *)) {
         UINavigationBarAppearance *appearnace = [[UINavigationBarAppearance alloc] init];

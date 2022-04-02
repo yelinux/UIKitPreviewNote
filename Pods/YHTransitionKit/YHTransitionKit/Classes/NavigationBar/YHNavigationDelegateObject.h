@@ -6,13 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YHNavigationController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YHNavigationDelegateObject : NSObject<UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
--(instancetype)initWithNavigationController: (YHNavigationController *)navigationController;
+-(instancetype)initWithNavigationController: (UINavigationController *)navigationController;
 
 @end
 

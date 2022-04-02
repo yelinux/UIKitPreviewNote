@@ -16,13 +16,6 @@
 		810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6027DAF74800BFF101 /* SettingKeyVC.m */; };
 		810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */; };
 		810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6B27DB34A300BFF101 /* UIFontFamilysVC.m */; };
-		810D5D8827F43DE800A80154 /* YHNavigationBaseAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D7C27F43DE700A80154 /* YHNavigationBaseAnimated.m */; };
-		810D5D8927F43DE800A80154 /* YHNavigationScaleAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D7E27F43DE700A80154 /* YHNavigationScaleAnimated.m */; };
-		810D5D8A27F43DE800A80154 /* YHNavigationFullScreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D7F27F43DE700A80154 /* YHNavigationFullScreenPopGesture.m */; };
-		810D5D8B27F43DE800A80154 /* YHNavigationTransitionAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D8027F43DE700A80154 /* YHNavigationTransitionAnimated.m */; };
-		810D5D8C27F43DE800A80154 /* YHNavigationDelegateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D8127F43DE700A80154 /* YHNavigationDelegateObject.m */; };
-		810D5D8D27F43DE800A80154 /* UIViewController+YHNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D8227F43DE700A80154 /* UIViewController+YHNavigation.m */; };
-		810D5D8E27F43DE800A80154 /* YHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D5D8527F43DE700A80154 /* YHNavigationController.m */; };
 		8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214127DAEF2D0041E39D /* AppDelegate.m */; };
 		8172214827DAEF2D0041E39D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214727DAEF2D0041E39D /* ViewController.m */; };
 		8172214B27DAEF2D0041E39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214927DAEF2D0041E39D /* Main.storyboard */; };
@@ -55,21 +48,6 @@
 		810C2C6527DAF88300BFF101 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		810C2C6A27DB34A300BFF101 /* UIFontFamilysVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontFamilysVC.h; sourceTree = "<group>"; };
 		810C2C6B27DB34A300BFF101 /* UIFontFamilysVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontFamilysVC.m; sourceTree = "<group>"; };
-		810D5D7927F43DE700A80154 /* UIViewController+YHNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHNavigation.h"; sourceTree = "<group>"; };
-		810D5D7A27F43DE700A80154 /* YHNavigationDelegateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationDelegateObject.h; sourceTree = "<group>"; };
-		810D5D7B27F43DE700A80154 /* YHNavigationTransitionAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationTransitionAnimated.h; sourceTree = "<group>"; };
-		810D5D7C27F43DE700A80154 /* YHNavigationBaseAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationBaseAnimated.m; sourceTree = "<group>"; };
-		810D5D7D27F43DE700A80154 /* YHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationController.h; sourceTree = "<group>"; };
-		810D5D7E27F43DE700A80154 /* YHNavigationScaleAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationScaleAnimated.m; sourceTree = "<group>"; };
-		810D5D7F27F43DE700A80154 /* YHNavigationFullScreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationFullScreenPopGesture.m; sourceTree = "<group>"; };
-		810D5D8027F43DE700A80154 /* YHNavigationTransitionAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationTransitionAnimated.m; sourceTree = "<group>"; };
-		810D5D8127F43DE700A80154 /* YHNavigationDelegateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationDelegateObject.m; sourceTree = "<group>"; };
-		810D5D8227F43DE700A80154 /* UIViewController+YHNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHNavigation.m"; sourceTree = "<group>"; };
-		810D5D8327F43DE700A80154 /* YHNavigationFullScreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationFullScreenPopGesture.h; sourceTree = "<group>"; };
-		810D5D8427F43DE700A80154 /* YHNavigationScaleAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationScaleAnimated.h; sourceTree = "<group>"; };
-		810D5D8527F43DE700A80154 /* YHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavigationController.m; sourceTree = "<group>"; };
-		810D5D8627F43DE700A80154 /* YHNavigationBaseAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationBaseAnimated.h; sourceTree = "<group>"; };
-		810D5D8727F43DE700A80154 /* YHNavigationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavigationKit.h; sourceTree = "<group>"; };
 		8172213D27DAEF2D0041E39D /* UIKitPreviewNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPreviewNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8172214027DAEF2D0041E39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8172214127DAEF2D0041E39D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,28 +140,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		810D5D7827F43DE700A80154 /* YHNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				810D5D7927F43DE700A80154 /* UIViewController+YHNavigation.h */,
-				810D5D8227F43DE700A80154 /* UIViewController+YHNavigation.m */,
-				810D5D8627F43DE700A80154 /* YHNavigationBaseAnimated.h */,
-				810D5D7C27F43DE700A80154 /* YHNavigationBaseAnimated.m */,
-				810D5D7D27F43DE700A80154 /* YHNavigationController.h */,
-				810D5D8527F43DE700A80154 /* YHNavigationController.m */,
-				810D5D7A27F43DE700A80154 /* YHNavigationDelegateObject.h */,
-				810D5D8127F43DE700A80154 /* YHNavigationDelegateObject.m */,
-				810D5D8327F43DE700A80154 /* YHNavigationFullScreenPopGesture.h */,
-				810D5D7F27F43DE700A80154 /* YHNavigationFullScreenPopGesture.m */,
-				810D5D8727F43DE700A80154 /* YHNavigationKit.h */,
-				810D5D8427F43DE700A80154 /* YHNavigationScaleAnimated.h */,
-				810D5D7E27F43DE700A80154 /* YHNavigationScaleAnimated.m */,
-				810D5D7B27F43DE700A80154 /* YHNavigationTransitionAnimated.h */,
-				810D5D8027F43DE700A80154 /* YHNavigationTransitionAnimated.m */,
-			);
-			path = YHNavigationBar;
-			sourceTree = "<group>";
-		};
 		8172213427DAEF2D0041E39D = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +161,6 @@
 		8172213F27DAEF2D0041E39D /* UIKitPreviewNote */ = {
 			isa = PBXGroup;
 			children = (
-				810D5D7827F43DE700A80154 /* YHNavigationBar */,
 				810C2C5B27DAF60700BFF101 /* Tool */,
 				810C2C5A27DAF5A600BFF101 /* Preview */,
 				8172214027DAEF2D0041E39D /* AppDelegate.h */,
@@ -366,21 +321,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				810D5D8E27F43DE800A80154 /* YHNavigationController.m in Sources */,
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
-				810D5D8B27F43DE800A80154 /* YHNavigationTransitionAnimated.m in Sources */,
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
 				81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */,
-				810D5D8827F43DE800A80154 /* YHNavigationBaseAnimated.m in Sources */,
-				810D5D8C27F43DE800A80154 /* YHNavigationDelegateObject.m in Sources */,
 				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
-				810D5D8927F43DE800A80154 /* YHNavigationScaleAnimated.m in Sources */,
 				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
-				810D5D8A27F43DE800A80154 /* YHNavigationFullScreenPopGesture.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
 				81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */,
@@ -389,7 +338,6 @@
 				81083F4627DECEE6002E954F /* LBTableViewHeader.m in Sources */,
 				81BC1F7C27ED5EA400A8AFCF /* MyCollectionViewCell.m in Sources */,
 				810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */,
-				810D5D8D27F43DE800A80154 /* UIViewController+YHNavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,11 +2,17 @@ PODS:
   - IQKeyboardManager (6.5.9)
   - Masonry (1.1.0)
   - MLeaksFinder (1.0.0)
+  - YHTransitionKit (0.1.2):
+    - YHTransitionKit/NavigationBar (= 0.1.2)
+    - YHTransitionKit/PresentDismiss (= 0.1.2)
+  - YHTransitionKit/NavigationBar (0.1.2)
+  - YHTransitionKit/PresentDismiss (0.1.2)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - Masonry
   - MLeaksFinder (from `https://github.com/Tencent/MLeaksFinder`)
+  - YHTransitionKit (from `https://github.com/yelinux/YHTransitionKit.git`)
 
 SPEC REPOS:
   trunk:
@@ -16,17 +22,23 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   MLeaksFinder:
     :git: https://github.com/Tencent/MLeaksFinder
+  YHTransitionKit:
+    :git: https://github.com/yelinux/YHTransitionKit.git
 
 CHECKOUT OPTIONS:
   MLeaksFinder:
     :commit: dda7088f1bbe9d1d07e730d37a16413dffa4747a
     :git: https://github.com/Tencent/MLeaksFinder
+  YHTransitionKit:
+    :commit: f534951c11dbe7f228210f4a6ac69e5f3a9470d1
+    :git: https://github.com/yelinux/YHTransitionKit.git
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 89eb3142bf1bbd0a3d1849543b629399c5da74c5
+  YHTransitionKit: 11791afcfe3a6b470d0697b3a24384b53d33e0c9
 
-PODFILE CHECKSUM: 28f55f3abe5a565ac657bfed8be8a22847fe1771
+PODFILE CHECKSUM: dfca0ef67939cdf2ff32370064db1ed1f2b249b2
 
 COCOAPODS: 1.11.2

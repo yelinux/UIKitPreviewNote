@@ -8,12 +8,13 @@
 #import "YHNavigationDelegateObject.h"
 #import "UIViewController+YHNavigation.h"
 #import "YHNavigationFullScreenPopGesture.h"
+#import "UINavigationController+YHTransition.h"
 
 @interface YHNavigationDelegateObject()
 
 /// 当前处理的导航控制器
-@property (nonatomic, weak) YHNavigationController *navigationController;
-/// pop动画
+@property (nonatomic, weak) UINavigationController *navigationController;
+/// pop动画进度
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *popTransition;
 /// 全屏侧滑手势
 @property (nonatomic, strong) YHNavigationFullScreenPopGesture *fullScreenPopGesture;
@@ -22,7 +23,7 @@
 
 @implementation YHNavigationDelegateObject
 
--(instancetype)initWithNavigationController: (YHNavigationController *)navigationController{
+-(instancetype)initWithNavigationController: (UINavigationController *)navigationController{
     if (self = [super init]) {
         self.navigationController = navigationController;
         //防止隐藏导航栏，侧滑失效
@@ -56,27 +57,11 @@
 }
 
 #pragma mark - UINavigationControllerDelegate
-//// Called when the navigation controller shows a new top view controller via a push, pop or setting of the view controller stack.
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    self.navigationController.view.backgroundColor = viewController.view.backgroundColor;
-    [self.navigationController setNavigationBarHidden:viewController.yh_prefersNavigationBarHidden animated:YES];
-}
-//- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated;
-//
-//- (UIInterfaceOrientationMask)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController{
-//    return UIInterfaceOrientationMaskAll;
-//}
-//
-//- (UIInterfaceOrientation)navigationControllerPreferredInterfaceOrientationForPresentation:(UINavigationController *)navigationController{
-//    return UIInterfaceOrientationPortrait;
-//}
-
-
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                    animationControllerForOperation:(UINavigationControllerOperation)operation
                                                 fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC  API_AVAILABLE(ios(7.0)){
-    return self.navigationController.pushPopAnimated;
+    return self.navigationController.yh_pushPopAnimated;
 }
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -92,7 +77,7 @@
         if (visibleVC.yh_interactivePopType == YHViewControllerInteractivePopTypeLeftScreen) {
             return YES;
         } else if(visibleVC.yh_interactivePopType == YHViewControllerInteractivePopTypeFollowNav
-                  && self.navigationController.interactivePopType == YHNavigationInteractivePopTypeLeftScreen){
+                  && self.navigationController.yh_interactivePopType == YHNavigationInteractivePopTypeLeftScreen){
             return YES;
         }
     }

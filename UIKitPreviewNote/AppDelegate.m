@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#import "YHNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -23,18 +22,13 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [storyboard instantiateInitialViewController];
     
-    YHNavigationController *nav = [[YHNavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.yh_interactivePopType = YHNavigationInteractivePopTypeFullScreen;
+    nav.yh_pushPopAnimated = [[YHNavigationScaleAnimated alloc] init];
+    nav.yh_navBackgroundColor = [UIColor whiteColor];
+    nav.yh_titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor colorWithRed:20/255.0 green:122/255.0 blue:244/255.0 alpha:1]};
+    nav.yh_shadowColor = UIColor.blueColor;
     nav.navigationBar.translucent = NO;
-    if (@available(iOS 13.0, *)) {
-        UINavigationBarAppearance *appearnace = [[UINavigationBarAppearance alloc] init];
-        [appearnace configureWithOpaqueBackground];
-        appearnace.backgroundColor = UIColor.whiteColor;//背景色
-        nav.navigationBar.standardAppearance = appearnace;
-        nav.navigationBar.scrollEdgeAppearance = appearnace;
-    } else {
-        // Fallback on earlier versions
-        [nav.navigationBar setBarTintColor:UIColor.whiteColor];//背景色
-    }
     
     self.window.rootViewController = nav;
     
