@@ -16,6 +16,10 @@
 		810C2C6127DAF74800BFF101 /* SettingKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6027DAF74800BFF101 /* SettingKeyVC.m */; };
 		810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6327DAF81A00BFF101 /* SettingEnumValueVC.m */; };
 		810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 810C2C6B27DB34A300BFF101 /* UIFontFamilysVC.m */; };
+		8115F05727F82D7500D0C547 /* NavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05627F82D7500D0C547 /* NavigationBarVC.m */; };
+		8115F05A27F8305100D0C547 /* SettingBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05927F8305100D0C547 /* SettingBoolCell.m */; };
+		8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05C27FD2E8600D0C547 /* CustomTitleView.m */; };
+		8115F06127FD341500D0C547 /* NavigationItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F06027FD341500D0C547 /* NavigationItemVC.m */; };
 		8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214127DAEF2D0041E39D /* AppDelegate.m */; };
 		8172214827DAEF2D0041E39D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214727DAEF2D0041E39D /* ViewController.m */; };
 		8172214B27DAEF2D0041E39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214927DAEF2D0041E39D /* Main.storyboard */; };
@@ -28,6 +32,7 @@
 		81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7827ED5D0800A8AFCF /* UICollectionVC.m */; };
 		81BC1F7C27ED5EA400A8AFCF /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7B27ED5EA300A8AFCF /* MyCollectionViewCell.m */; };
 		81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */; };
+		81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,14 @@
 		810C2C6527DAF88300BFF101 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		810C2C6A27DB34A300BFF101 /* UIFontFamilysVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFontFamilysVC.h; sourceTree = "<group>"; };
 		810C2C6B27DB34A300BFF101 /* UIFontFamilysVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFontFamilysVC.m; sourceTree = "<group>"; };
+		8115F05527F82D7500D0C547 /* NavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarVC.h; sourceTree = "<group>"; };
+		8115F05627F82D7500D0C547 /* NavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarVC.m; sourceTree = "<group>"; };
+		8115F05827F8305100D0C547 /* SettingBoolCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingBoolCell.h; sourceTree = "<group>"; };
+		8115F05927F8305100D0C547 /* SettingBoolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingBoolCell.m; sourceTree = "<group>"; };
+		8115F05B27FD2E8600D0C547 /* CustomTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTitleView.h; sourceTree = "<group>"; };
+		8115F05C27FD2E8600D0C547 /* CustomTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTitleView.m; sourceTree = "<group>"; };
+		8115F05F27FD341500D0C547 /* NavigationItemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemVC.h; sourceTree = "<group>"; };
+		8115F06027FD341500D0C547 /* NavigationItemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemVC.m; sourceTree = "<group>"; };
 		8172213D27DAEF2D0041E39D /* UIKitPreviewNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPreviewNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8172214027DAEF2D0041E39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8172214127DAEF2D0041E39D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +83,8 @@
 		81BC1F7B27ED5EA300A8AFCF /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		81BC1F7D27ED66B300A8AFCF /* MyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		81FE0D9C27FD75F800668DB2 /* SettingClickCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingClickCell.h; sourceTree = "<group>"; };
+		81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingClickCell.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
 		AB148B7B854771E2B4C90104 /* Pods-UIKitPreviewNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.release.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.release.xcconfig"; sourceTree = "<group>"; };
 		CDF48E19C79DF3D3AB414A52 /* Pods_UIKitPreviewNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitPreviewNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +114,8 @@
 		810C2C5A27DAF5A600BFF101 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				8115F05E27FD33E700D0C547 /* NavigationItem */,
+				8115F05427F82D5800D0C547 /* NavigationBar */,
 				81BC1F7627ED5CEB00A8AFCF /* CollectionView */,
 				81083F4327DECEC3002E954F /* View */,
 				810C2C6927DB348800BFF101 /* Font */,
@@ -125,6 +142,10 @@
 				81083F5227DF0F75002E954F /* SettingColorVC.m */,
 				8179D0D627E1C93A0091D862 /* SettingNumCell.h */,
 				8179D0D727E1C93A0091D862 /* SettingNumCell.m */,
+				8115F05827F8305100D0C547 /* SettingBoolCell.h */,
+				8115F05927F8305100D0C547 /* SettingBoolCell.m */,
+				81FE0D9C27FD75F800668DB2 /* SettingClickCell.h */,
+				81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -138,6 +159,26 @@
 				810C2C6B27DB34A300BFF101 /* UIFontFamilysVC.m */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		8115F05427F82D5800D0C547 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				8115F05527F82D7500D0C547 /* NavigationBarVC.h */,
+				8115F05627F82D7500D0C547 /* NavigationBarVC.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		8115F05E27FD33E700D0C547 /* NavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				8115F05B27FD2E8600D0C547 /* CustomTitleView.h */,
+				8115F05C27FD2E8600D0C547 /* CustomTitleView.m */,
+				8115F05F27FD341500D0C547 /* NavigationItemVC.h */,
+				8115F06027FD341500D0C547 /* NavigationItemVC.m */,
+			);
+			path = NavigationItem;
 			sourceTree = "<group>";
 		};
 		8172213427DAEF2D0041E39D = {
@@ -321,15 +362,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */,
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
+				8115F05A27F8305100D0C547 /* SettingBoolCell.m in Sources */,
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
 				81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */,
 				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
+				8115F05727F82D7500D0C547 /* NavigationBarVC.m in Sources */,
+				81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
 				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
+				8115F06127FD341500D0C547 /* NavigationItemVC.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
 				81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */,

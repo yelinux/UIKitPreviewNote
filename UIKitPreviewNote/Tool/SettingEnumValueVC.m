@@ -56,7 +56,9 @@
     }];
     _tableView = tableView;
     
-    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.model.selectIndex inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    if (self.model.selectIndex < self.model.values.count) {
+        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.model.selectIndex inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
