@@ -20,6 +20,10 @@
 		8115F05A27F8305100D0C547 /* SettingBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05927F8305100D0C547 /* SettingBoolCell.m */; };
 		8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05C27FD2E8600D0C547 /* CustomTitleView.m */; };
 		8115F06127FD341500D0C547 /* NavigationItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F06027FD341500D0C547 /* NavigationItemVC.m */; };
+		8140182D27FE6F9300E66298 /* TabBarPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140182C27FE6F9300E66298 /* TabBarPreviewVC.m */; };
+		8140183027FE70BD00E66298 /* TabBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140182F27FE70BD00E66298 /* TabBarDemoVC.m */; };
+		8140183427FEAD7D00E66298 /* Quart2DVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140183327FEAD7D00E66298 /* Quart2DVC.m */; };
+		8140183727FEAE7500E66298 /* Quart2DTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140183627FEAE7500E66298 /* Quart2DTestView.m */; };
 		8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214127DAEF2D0041E39D /* AppDelegate.m */; };
 		8172214827DAEF2D0041E39D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172214727DAEF2D0041E39D /* ViewController.m */; };
 		8172214B27DAEF2D0041E39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8172214927DAEF2D0041E39D /* Main.storyboard */; };
@@ -61,6 +65,14 @@
 		8115F05C27FD2E8600D0C547 /* CustomTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTitleView.m; sourceTree = "<group>"; };
 		8115F05F27FD341500D0C547 /* NavigationItemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemVC.h; sourceTree = "<group>"; };
 		8115F06027FD341500D0C547 /* NavigationItemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemVC.m; sourceTree = "<group>"; };
+		8140182B27FE6F9300E66298 /* TabBarPreviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarPreviewVC.h; sourceTree = "<group>"; };
+		8140182C27FE6F9300E66298 /* TabBarPreviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarPreviewVC.m; sourceTree = "<group>"; };
+		8140182E27FE70BD00E66298 /* TabBarDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDemoVC.h; sourceTree = "<group>"; };
+		8140182F27FE70BD00E66298 /* TabBarDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarDemoVC.m; sourceTree = "<group>"; };
+		8140183227FEAD7D00E66298 /* Quart2DVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quart2DVC.h; sourceTree = "<group>"; };
+		8140183327FEAD7D00E66298 /* Quart2DVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quart2DVC.m; sourceTree = "<group>"; };
+		8140183527FEAE7500E66298 /* Quart2DTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quart2DTestView.h; sourceTree = "<group>"; };
+		8140183627FEAE7500E66298 /* Quart2DTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quart2DTestView.m; sourceTree = "<group>"; };
 		8172213D27DAEF2D0041E39D /* UIKitPreviewNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPreviewNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8172214027DAEF2D0041E39D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8172214127DAEF2D0041E39D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +126,8 @@
 		810C2C5A27DAF5A600BFF101 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				8140183127FEAD6300E66298 /* Quart2D */,
+				8140182727FE6F4800E66298 /* TabBarController */,
 				8115F05E27FD33E700D0C547 /* NavigationItem */,
 				8115F05427F82D5800D0C547 /* NavigationBar */,
 				81BC1F7627ED5CEB00A8AFCF /* CollectionView */,
@@ -179,6 +193,28 @@
 				8115F06027FD341500D0C547 /* NavigationItemVC.m */,
 			);
 			path = NavigationItem;
+			sourceTree = "<group>";
+		};
+		8140182727FE6F4800E66298 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				8140182B27FE6F9300E66298 /* TabBarPreviewVC.h */,
+				8140182C27FE6F9300E66298 /* TabBarPreviewVC.m */,
+				8140182E27FE70BD00E66298 /* TabBarDemoVC.h */,
+				8140182F27FE70BD00E66298 /* TabBarDemoVC.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		8140183127FEAD6300E66298 /* Quart2D */ = {
+			isa = PBXGroup;
+			children = (
+				8140183227FEAD7D00E66298 /* Quart2DVC.h */,
+				8140183327FEAD7D00E66298 /* Quart2DVC.m */,
+				8140183527FEAE7500E66298 /* Quart2DTestView.h */,
+				8140183627FEAE7500E66298 /* Quart2DTestView.m */,
+			);
+			path = Quart2D;
 			sourceTree = "<group>";
 		};
 		8172213427DAEF2D0041E39D = {
@@ -365,16 +401,20 @@
 				8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */,
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
+				8140183027FE70BD00E66298 /* TabBarDemoVC.m in Sources */,
 				8115F05A27F8305100D0C547 /* SettingBoolCell.m in Sources */,
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
 				81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */,
 				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
+				8140182D27FE6F9300E66298 /* TabBarPreviewVC.m in Sources */,
 				8115F05727F82D7500D0C547 /* NavigationBarVC.m in Sources */,
 				81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
+				8140183727FEAE7500E66298 /* Quart2DTestView.m in Sources */,
 				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
+				8140183427FEAD7D00E66298 /* Quart2DVC.m in Sources */,
 				8115F06127FD341500D0C547 /* NavigationItemVC.m in Sources */,
 				810C2C6C27DB34A300BFF101 /* UIFontFamilysVC.m in Sources */,
 				8172214227DAEF2D0041E39D /* AppDelegate.m in Sources */,
@@ -539,6 +579,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,6 +610,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

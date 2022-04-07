@@ -13,6 +13,8 @@
 #import "UICollectionVC.h"
 #import "NavigationBarVC.h"
 #import "NavigationItemVC.h"
+#import "TabBarPreviewVC.h"
+#import "Quart2DVC.h"
 
 @interface ViewController ()
 
@@ -70,6 +72,16 @@
 
 - (IBAction)click5:(id)sender {
     NavigationItemVC *vc = [[NavigationItemVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click6:(id)sender {
+    TabBarPreviewVC *vc = [[TabBarPreviewVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click7:(id)sender {
+    Quart2DVC *vc = [[Quart2DVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
