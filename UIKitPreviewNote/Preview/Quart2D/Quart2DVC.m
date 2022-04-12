@@ -221,6 +221,7 @@
             CGContextAddArcToPoint(ctx, maxx, miny, maxx, midy, radius);
             CGContextAddArcToPoint(ctx, maxx, maxy, midx, maxy, radius);
             CGContextAddArcToPoint(ctx, minx, maxy, minx, midy, radius);
+//            CGContextAddLineToPoint(ctx, minx, maxy);
             CGContextClosePath(ctx);
             CGContextDrawPath(ctx, kCGPathFillStroke);
             //如果想要进行裁切的话去掉CGContextDrawPath(ctx, kCGPathFillStroke);方法 添加以下方法
@@ -229,6 +230,21 @@
         //添加图片
         //CGContextDrawImage(context, rect, self.image.CGImage)；
         //或者[self.image drawInRect:rect];
+        }];
+        [stackView addArrangedSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(200);
+        }];
+    }
+    {
+        /**
+         
+         */
+        UIView *view = [[Quart2DTestView alloc] initWithBlock:^(CGRect rect) {
+            
+            NSAttributedString *attr = [[NSAttributedString alloc] initWithString:@"hellohellohellohello\nworld" attributes:@{NSBackgroundColorAttributeName:UIColor.redColor, NSForegroundColorAttributeName:UIColor.whiteColor, NSFontAttributeName:[UIFont systemFontOfSize:16]}];
+            CGSize size = [attr boundingRectWithSize:rect.size options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil].size;
+            [attr drawInRect:CGRectMake(10, 10, size.width, size.height)];
         }];
         [stackView addArrangedSubview:view];
         [view mas_makeConstraints:^(MASConstraintMaker *make) {

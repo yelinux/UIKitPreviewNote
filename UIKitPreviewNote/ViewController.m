@@ -15,6 +15,7 @@
 #import "NavigationItemVC.h"
 #import "TabBarPreviewVC.h"
 #import "Quart2DVC.h"
+#import "ShadowTestVC.h"
 
 @interface ViewController ()
 
@@ -82,6 +83,11 @@
 
 - (IBAction)click7:(id)sender {
     Quart2DVC *vc = [[Quart2DVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click8:(id)sender {
+    ShadowTestVC *vc = [[ShadowTestVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

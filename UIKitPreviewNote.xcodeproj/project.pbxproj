@@ -20,6 +20,7 @@
 		8115F05A27F8305100D0C547 /* SettingBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05927F8305100D0C547 /* SettingBoolCell.m */; };
 		8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F05C27FD2E8600D0C547 /* CustomTitleView.m */; };
 		8115F06127FD341500D0C547 /* NavigationItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8115F06027FD341500D0C547 /* NavigationItemVC.m */; };
+		812CCA7B280524D00054E3A4 /* ShadowTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CCA7A280524D00054E3A4 /* ShadowTestVC.m */; };
 		8140182D27FE6F9300E66298 /* TabBarPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140182C27FE6F9300E66298 /* TabBarPreviewVC.m */; };
 		8140183027FE70BD00E66298 /* TabBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140182F27FE70BD00E66298 /* TabBarDemoVC.m */; };
 		8140183427FEAD7D00E66298 /* Quart2DVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140183327FEAD7D00E66298 /* Quart2DVC.m */; };
@@ -65,6 +66,8 @@
 		8115F05C27FD2E8600D0C547 /* CustomTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTitleView.m; sourceTree = "<group>"; };
 		8115F05F27FD341500D0C547 /* NavigationItemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemVC.h; sourceTree = "<group>"; };
 		8115F06027FD341500D0C547 /* NavigationItemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemVC.m; sourceTree = "<group>"; };
+		812CCA79280524D00054E3A4 /* ShadowTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowTestVC.h; sourceTree = "<group>"; };
+		812CCA7A280524D00054E3A4 /* ShadowTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowTestVC.m; sourceTree = "<group>"; };
 		8140182B27FE6F9300E66298 /* TabBarPreviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarPreviewVC.h; sourceTree = "<group>"; };
 		8140182C27FE6F9300E66298 /* TabBarPreviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarPreviewVC.m; sourceTree = "<group>"; };
 		8140182E27FE70BD00E66298 /* TabBarDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarDemoVC.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				8172216527DAF3040041E39D /* UILabelVC.m */,
 				817799B327E99D4B00BB90F3 /* NSAttributeStringVC.h */,
 				817799B427E99D4B00BB90F3 /* NSAttributeStringVC.m */,
+				812CCA79280524D00054E3A4 /* ShadowTestVC.h */,
+				812CCA7A280524D00054E3A4 /* ShadowTestVC.m */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */,
 				8172214827DAEF2D0041E39D /* ViewController.m in Sources */,
 				81083F4927DED771002E954F /* UIFontSystemVC.m in Sources */,
+				812CCA7B280524D00054E3A4 /* ShadowTestVC.m in Sources */,
 				8140183727FEAE7500E66298 /* Quart2DTestView.m in Sources */,
 				817799B527E99D4B00BB90F3 /* NSAttributeStringVC.m in Sources */,
 				8140183427FEAD7D00E66298 /* Quart2DVC.m in Sources */,
