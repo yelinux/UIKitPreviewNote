@@ -43,9 +43,9 @@
 		81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC1F7E27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m */; };
 		81E5CBF3280E45A900650FD4 /* StackTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CBF2280E45A900650FD4 /* StackTransitionView.m */; };
 		81E5CBFB280E4EEB00650FD4 /* StackMovTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CBFA280E4EEB00650FD4 /* StackMovTestVC.m */; };
-		81E5CBFE280E4F8800650FD4 /* StackMov1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CBFD280E4F8800650FD4 /* StackMov1View.m */; };
+		81E5CBFE280E4F8800650FD4 /* YHDragSortGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CBFD280E4F8800650FD4 /* YHDragSortGridView.m */; };
 		81E5CC01280E5AE500650FD4 /* MovItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC00280E5AE500650FD4 /* MovItemView.m */; };
-		81E5CC04280E64C400650FD4 /* MovLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC03280E64C400650FD4 /* MovLongPressGestureRecognizer.m */; };
+		81E5CC04280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */; };
 		81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */; };
 /* End PBXBuildFile section */
 
@@ -119,12 +119,12 @@
 		81E5CBF2280E45A900650FD4 /* StackTransitionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTransitionView.m; sourceTree = "<group>"; };
 		81E5CBF9280E4EEB00650FD4 /* StackMovTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackMovTestVC.h; sourceTree = "<group>"; };
 		81E5CBFA280E4EEB00650FD4 /* StackMovTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackMovTestVC.m; sourceTree = "<group>"; };
-		81E5CBFC280E4F8800650FD4 /* StackMov1View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackMov1View.h; sourceTree = "<group>"; };
-		81E5CBFD280E4F8800650FD4 /* StackMov1View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackMov1View.m; sourceTree = "<group>"; };
+		81E5CBFC280E4F8800650FD4 /* YHDragSortGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDragSortGridView.h; sourceTree = "<group>"; };
+		81E5CBFD280E4F8800650FD4 /* YHDragSortGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDragSortGridView.m; sourceTree = "<group>"; };
 		81E5CBFF280E5AE500650FD4 /* MovItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovItemView.h; sourceTree = "<group>"; };
 		81E5CC00280E5AE500650FD4 /* MovItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovItemView.m; sourceTree = "<group>"; };
-		81E5CC02280E64C400650FD4 /* MovLongPressGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovLongPressGestureRecognizer.h; sourceTree = "<group>"; };
-		81E5CC03280E64C400650FD4 /* MovLongPressGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		81E5CC02280E64C400650FD4 /* YHLongPressDragGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHLongPressDragGestureRecognizer.h; sourceTree = "<group>"; };
+		81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHLongPressDragGestureRecognizer.m; sourceTree = "<group>"; };
 		81FE0D9C27FD75F800668DB2 /* SettingClickCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingClickCell.h; sourceTree = "<group>"; };
 		81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingClickCell.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -331,12 +331,12 @@
 			children = (
 				81E5CBF9280E4EEB00650FD4 /* StackMovTestVC.h */,
 				81E5CBFA280E4EEB00650FD4 /* StackMovTestVC.m */,
-				81E5CBFC280E4F8800650FD4 /* StackMov1View.h */,
-				81E5CBFD280E4F8800650FD4 /* StackMov1View.m */,
+				81E5CBFC280E4F8800650FD4 /* YHDragSortGridView.h */,
+				81E5CBFD280E4F8800650FD4 /* YHDragSortGridView.m */,
 				81E5CBFF280E5AE500650FD4 /* MovItemView.h */,
 				81E5CC00280E5AE500650FD4 /* MovItemView.m */,
-				81E5CC02280E64C400650FD4 /* MovLongPressGestureRecognizer.h */,
-				81E5CC03280E64C400650FD4 /* MovLongPressGestureRecognizer.m */,
+				81E5CC02280E64C400650FD4 /* YHLongPressDragGestureRecognizer.h */,
+				81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */,
 			);
 			path = StackMovTest;
 			sourceTree = "<group>";
@@ -472,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E5CC04280E64C400650FD4 /* MovLongPressGestureRecognizer.m in Sources */,
+				81E5CC04280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m in Sources */,
 				8115F05D27FD2E8600D0C547 /* CustomTitleView.m in Sources */,
 				810C2C5E27DAF67500BFF101 /* SettingVC.m in Sources */,
 				810C2C6427DAF81A00BFF101 /* SettingEnumValueVC.m in Sources */,
@@ -501,7 +501,7 @@
 				81E5CBFB280E4EEB00650FD4 /* StackMovTestVC.m in Sources */,
 				81BC1F7927ED5D0800A8AFCF /* UICollectionVC.m in Sources */,
 				81083F4C27DEE3C9002E954F /* SettingFontVC.m in Sources */,
-				81E5CBFE280E4F8800650FD4 /* StackMov1View.m in Sources */,
+				81E5CBFE280E4F8800650FD4 /* YHDragSortGridView.m in Sources */,
 				8172215327DAEF2E0041E39D /* main.m in Sources */,
 				81083F4627DECEE6002E954F /* LBTableViewHeader.m in Sources */,
 				81BC1F7C27ED5EA400A8AFCF /* MyCollectionViewCell.m in Sources */,

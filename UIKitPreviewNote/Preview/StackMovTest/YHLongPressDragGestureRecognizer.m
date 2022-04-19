@@ -5,15 +5,15 @@
 //  Created by chenyehong on 2022/4/19.
 //
 
-#import "MovLongPressGestureRecognizer.h"
+#import "YHLongPressDragGestureRecognizer.h"
 
-@interface MovLongPressGestureRecognizer()<UIGestureRecognizerDelegate>
+@interface YHLongPressDragGestureRecognizer()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, assign) CGPoint touchBeginPoint;
 
 @end
 
-@implementation MovLongPressGestureRecognizer
+@implementation YHLongPressDragGestureRecognizer
 
 -(instancetype)init{
     if (self = [super initWithTarget:self action:@selector(longPress:)]) {
@@ -32,7 +32,7 @@
         case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateFailed:
             if (!CGPointEqualToPoint(self.touchBeginPoint, CGPointZero)) {
-                [self.movDelegate movLongPressGestureRecognizerEnd];
+                [self.movDelegate yh_LongPressDragGestureEnd];
             }
             break;
         default:
@@ -41,7 +41,7 @@
 }
 
 -(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    return [self.movDelegate movLongPressGestureRecognizerBegin:self.touchBeginPoint];
+    return [self.movDelegate yh_LongPressDragGestureBegin:self.touchBeginPoint];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -59,7 +59,7 @@
     if (self.state == UIGestureRecognizerStateBegan || self.state == UIGestureRecognizerStateChanged) {
         UITouch *touch = touches.anyObject;
         CGPoint point = [touch locationInView:self.view];
-        [self.movDelegate movLongPressGestureRecognizerMove:point];
+        [self.movDelegate yh_LongPressDragGestureMove:point];
     }
 }
 
