@@ -16,6 +16,9 @@
 #import "TabBarPreviewVC.h"
 #import "Quart2DVC.h"
 #import "ShadowTestVC.h"
+#import "SearchControllerTestVC.h"
+#import "ViewTransitionAnimVC.h"
+#import "StackMovTestVC.h"
 
 @interface ViewController ()
 
@@ -88,6 +91,21 @@
 
 - (IBAction)click8:(id)sender {
     ShadowTestVC *vc = [[ShadowTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click9:(id)sender {
+    SearchControllerTestVC *vc = [[SearchControllerTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click10:(id)sender {
+    ViewTransitionAnimVC *vc = [[ViewTransitionAnimVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click11:(id)sender {
+    StackMovTestVC *vc = [[StackMovTestVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
