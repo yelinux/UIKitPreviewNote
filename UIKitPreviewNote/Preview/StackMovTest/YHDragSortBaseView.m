@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) UIView *dragView;
 @property (nonatomic, strong) UIImageView *ivDrag;
+@property (nonatomic, strong) CAKeyframeAnimation *sortingAnim;
 
 @end
 
@@ -60,6 +61,11 @@
     
     [self addSubview:self.ivDrag];
     self.dragView.alpha = 0;
+    
+    [self.ivDrag.layer addAnimation:self.sortingAnim forKey:nil];
+    [self.subItemViews enumerateObjectsUsingBlock:^(UIView * view, NSUInteger idx, BOOL * _Nonnull stop) {
+        [view.layer addAnimation:self.sortingAnim forKey:nil];
+    }];
 }
 
 -(void)yh_LongPressDragGestureMove: (CGPoint)point{
@@ -89,6 +95,11 @@
     [self.ivDrag removeFromSuperview];
     self.ivDrag.transform = CGAffineTransformIdentity;
     self.dragView.alpha = 1;
+    
+    [self.ivDrag.layer removeAllAnimations];
+    [self.subItemViews enumerateObjectsUsingBlock:^(UIView * view, NSUInteger idx, BOOL * _Nonnull stop) {
+        [view.layer removeAllAnimations];
+    }];
 }
 
 // MARK - Getter
@@ -105,6 +116,20 @@
         _ivDrag = [[UIImageView alloc] init];
     }
     return _ivDrag;
+}
+
+- (CAKeyframeAnimation *)sortingAnim{
+    if (_sortingAnim == nil) {
+        CGFloat (^angle2radian)(int x) = ^(int x){
+            return ((x)/180.0*M_PI);
+        };
+        _sortingAnim = [CAKeyframeAnimation animation];
+        _sortingAnim.keyPath = @"transform.rotation";
+        _sortingAnim.values = @[@(angle2radian(-5)),@(angle2radian(5)),@(angle2radian(-5))];
+        _sortingAnim.repeatCount = MAXFLOAT;
+        _sortingAnim.duration = 0.5;
+    }
+    return _sortingAnim;
 }
 
 @end
