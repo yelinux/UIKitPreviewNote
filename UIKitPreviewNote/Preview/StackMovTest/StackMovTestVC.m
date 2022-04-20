@@ -8,6 +8,7 @@
 #import "StackMovTestVC.h"
 #import "YHDragSortGridView.h"
 #import "MovItemView.h"
+#import "UIView+YHLongPressDrag.h"
 
 @interface StackMovTestVC ()
 
@@ -46,7 +47,9 @@
     void(^addStackSubBlock)(void) = ^{
         YHDragSortGridView *view = [[YHDragSortGridView alloc] init];
         [stackView addArrangedSubview:view];
-        [view setViews:@[createSubGridViewBlock(), createSubGridViewBlock(),createSubGridViewBlock(), createSubGridViewBlock(), createSubGridViewBlock()] colNum:3 itemWidth:100 itemHeight:100 edgeInsets:UIEdgeInsetsZero];
+        UIView *temp = createSubGridViewBlock();
+        temp.yh_longPressDragDisable = YES;
+        [view setViews:@[temp, createSubGridViewBlock(),createSubGridViewBlock(), createSubGridViewBlock(), createSubGridViewBlock()] colNum:3 itemWidth:100 itemHeight:100 edgeInsets:UIEdgeInsetsZero];
     };
     
     addStackSubBlock();
@@ -63,6 +66,7 @@
     [models enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL * _Nonnull stop) {
         MovItemView *itemView = [[MovItemView alloc] init];
         itemView.lb.text = str;
+        itemView.yh_longPressDragDisable = (idx == 0);
         [views addObject:itemView];
     }];
     return views;
@@ -77,6 +81,7 @@
     [models enumerateObjectsUsingBlock:^(NSString *str, NSUInteger idx, BOOL * _Nonnull stop) {
         MovItemView *itemView = [[MovItemView alloc] init];
         itemView.lb.text = str;
+        itemView.yh_longPressDragDisable = (idx == 0);
         [views addObject:itemView];
     }];
     return views;

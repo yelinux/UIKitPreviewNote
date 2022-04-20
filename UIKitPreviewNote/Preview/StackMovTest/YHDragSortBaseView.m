@@ -7,12 +7,14 @@
 
 #import "YHDragSortBaseView.h"
 #import "YHLongPressDragGestureRecognizer.h"
+#import "UIView+YHLongPressDrag.h"
 
 @interface YHDragSortBaseView()<YHLongPressDragGestureDelegate>
 
 @property (nonatomic, strong) YHLongPressDragGestureRecognizer *longPressDragGest;
 
 @property (nonatomic, strong) UIView *dragView;
+@property (nonatomic, assign) CGFloat tempAlpha;
 @property (nonatomic, strong) UIImageView *ivDrag;
 @property (nonatomic, strong) CAKeyframeAnimation *sortingAnim;
 
@@ -36,7 +38,7 @@
 -(BOOL)yh_LongPressDragGestureRecognize: (CGPoint)point{
     __block UIView *targetView = nil;
     [self.subItemViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (view.alpha > 0) {
+        if (view.alpha > 0 && !view.yh_longPressDragDisable) {
             CGRect rect = [self convertRect:view.frame fromView:view.superview];
             if (CGRectContainsPoint(rect, point)) {
                 targetView = view;
@@ -60,11 +62,12 @@
     self.ivDrag.transform = CGAffineTransformMakeScale(1.1, 1.1);
     
     [self addSubview:self.ivDrag];
+    self.tempAlpha = self.dragView.alpha;
     self.dragView.alpha = 0;
     
     [self.ivDrag.layer addAnimation:self.sortingAnim forKey:nil];
     [self.subItemViews enumerateObjectsUsingBlock:^(UIView * view, NSUInteger idx, BOOL * _Nonnull stop) {
-        [view.layer addAnimation:self.sortingAnim forKey:nil];
+        (!view.yh_longPressDragDisable) ? [view.layer addAnimation:self.sortingAnim forKey:nil] : nil;
     }];
 }
 
@@ -73,7 +76,7 @@
 
     __block UIView *targetView = nil;
     [self.subItemViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (view.alpha > 0) {
+        if (view.alpha > 0 && !view.yh_longPressDragDisable) {
             CGRect rect = [self convertRect:view.frame fromView:view.superview];
             if (CGRectContainsPoint(rect, point)) {
                 targetView = view;
@@ -94,11 +97,11 @@
 -(void)yh_LongPressDragGestureEnd{
     [self.ivDrag removeFromSuperview];
     self.ivDrag.transform = CGAffineTransformIdentity;
-    self.dragView.alpha = 1;
+    self.dragView.alpha = self.tempAlpha;
     
     [self.ivDrag.layer removeAllAnimations];
     [self.subItemViews enumerateObjectsUsingBlock:^(UIView * view, NSUInteger idx, BOOL * _Nonnull stop) {
-        [view.layer removeAllAnimations];
+        (!view.yh_longPressDragDisable) ? [view.layer removeAllAnimations] : nil;
     }];
 }
 
