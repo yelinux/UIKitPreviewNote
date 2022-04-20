@@ -46,6 +46,7 @@
 		81E5CBFE280E4F8800650FD4 /* YHDragSortGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CBFD280E4F8800650FD4 /* YHDragSortGridView.m */; };
 		81E5CC01280E5AE500650FD4 /* MovItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC00280E5AE500650FD4 /* MovItemView.m */; };
 		81E5CC04280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */; };
+		81E5CC0A280EB3B800650FD4 /* YHDragSortBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5CC09280EB3B800650FD4 /* YHDragSortBaseView.m */; };
 		81FE0D9E27FD75F800668DB2 /* SettingClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,8 @@
 		81E5CC00280E5AE500650FD4 /* MovItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovItemView.m; sourceTree = "<group>"; };
 		81E5CC02280E64C400650FD4 /* YHLongPressDragGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHLongPressDragGestureRecognizer.h; sourceTree = "<group>"; };
 		81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHLongPressDragGestureRecognizer.m; sourceTree = "<group>"; };
+		81E5CC08280EB3B800650FD4 /* YHDragSortBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDragSortBaseView.h; sourceTree = "<group>"; };
+		81E5CC09280EB3B800650FD4 /* YHDragSortBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDragSortBaseView.m; sourceTree = "<group>"; };
 		81FE0D9C27FD75F800668DB2 /* SettingClickCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingClickCell.h; sourceTree = "<group>"; };
 		81FE0D9D27FD75F800668DB2 /* SettingClickCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingClickCell.m; sourceTree = "<group>"; };
 		8449B5B7BA89E0646AC3D9F9 /* Pods-UIKitPreviewNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitPreviewNote.debug.xcconfig"; path = "Target Support Files/Pods-UIKitPreviewNote/Pods-UIKitPreviewNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				81E5CC00280E5AE500650FD4 /* MovItemView.m */,
 				81E5CC02280E64C400650FD4 /* YHLongPressDragGestureRecognizer.h */,
 				81E5CC03280E64C400650FD4 /* YHLongPressDragGestureRecognizer.m */,
+				81E5CC08280EB3B800650FD4 /* YHDragSortBaseView.h */,
+				81E5CC09280EB3B800650FD4 /* YHDragSortBaseView.m */,
 			);
 			path = StackMovTest;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 				8172216727DAF3040041E39D /* UILabelVC.m in Sources */,
 				81BC1F7F27ED66B300A8AFCF /* MyCollectionViewFlowLayout.m in Sources */,
 				818595A228066B25002227A1 /* ViewTransitionAnimVC.m in Sources */,
+				81E5CC0A280EB3B800650FD4 /* YHDragSortBaseView.m in Sources */,
 				81083F5327DF0F75002E954F /* SettingColorVC.m in Sources */,
 				8179D0D827E1C93A0091D862 /* SettingNumCell.m in Sources */,
 				8140182D27FE6F9300E66298 /* TabBarPreviewVC.m in Sources */,

@@ -5,16 +5,21 @@
 //  Created by chenyehong on 2022/4/19.
 //
 
-#import <UIKit/UIKit.h>
+#import "YHDragSortBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YHDragSortGridView : UIView
+@interface YHDragSortGridView : YHDragSortBaseView
+
+-(void)setViews: (NSArray<UIView*>*)views
+         colNum: (NSInteger)colNum
+    itemSpacing: (CGFloat)itemSpacing
+     itemHeight: (CGFloat)itemHeight
+     edgeInsets: (UIEdgeInsets)edgeInsets;
 
 -(void)setViews: (NSArray<UIView*>*)views
          colNum: (NSInteger)colNum
       itemWidth: (CGFloat)itemWidth
-    itemSpacing: (CGFloat)itemSpacing
      itemHeight: (CGFloat)itemHeight
      edgeInsets: (UIEdgeInsets)edgeInsets;
 

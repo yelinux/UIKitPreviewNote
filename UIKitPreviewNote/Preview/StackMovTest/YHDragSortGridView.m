@@ -6,16 +6,8 @@
 //
 
 #import "YHDragSortGridView.h"
-#import "YHLongPressDragGestureRecognizer.h"
 
-@interface YHDragSortGridView()<YHLongPressDragGestureDelegate>
-
-@property (nonatomic, strong) YHLongPressDragGestureRecognizer *longGest;
-
-@property (nonatomic, strong) NSMutableArray *subItemViews;
-
-@property (nonatomic, strong) UIView *movView;
-@property (nonatomic, strong) UIImageView *iv;
+@interface YHDragSortGridView()
 
 @property (nonatomic, assign) NSInteger colNum;
 @property (nonatomic, assign) CGFloat itemWidth;
@@ -27,71 +19,20 @@
 
 @implementation YHDragSortGridView
 
-- (instancetype)init{
-    if (self = [super init]) {
-        [self setupUI];
-    }
-    return self;
+-(void)setViews: (NSArray<UIView*>*)views
+         colNum: (NSInteger)colNum
+    itemSpacing: (CGFloat)itemSpacing
+     itemHeight: (CGFloat)itemHeight
+     edgeInsets: (UIEdgeInsets)edgeInsets{
+    [self setViews:views colNum:colNum itemWidth:0 itemSpacing:itemSpacing itemHeight:itemHeight edgeInsets:edgeInsets];
 }
 
-- (void)setupUI{
-    YHLongPressDragGestureRecognizer *longGest = [[YHLongPressDragGestureRecognizer alloc] init];
-    longGest.movDelegate = self;
-    [self addGestureRecognizer:longGest];
-    _longGest = longGest;
-}
-
-// Mark - MovLongPressGestureRecognizerDelegate
--(BOOL)yh_LongPressDragGestureBegin: (CGPoint)point{
-    __block UIView *targetView = nil;
-    [self.subItemViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (view.alpha > 0) {
-            CGRect rect = [self convertRect:view.frame fromView:view.superview];
-            if (CGRectContainsPoint(rect, point)) {
-                targetView = view;
-                self.iv.frame = rect;
-                
-                UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, view.window.screen.scale);
-                [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];
-                self.iv.image = UIGraphicsGetImageFromCurrentImageContext();
-                UIGraphicsEndImageContext();
-                self.iv.transform = CGAffineTransformMakeScale(1.1, 1.1);
-                
-                [self addSubview:self.iv];
-                *stop = YES;
-            }
-        }
-    }];
-    self.movView = targetView;
-    self.movView.alpha = 0;
-    return targetView?YES:NO;
-}
-
--(void)yh_LongPressDragGestureMove: (CGPoint)point{
-    self.iv.center = point;
-
-    __block UIView *targetView = nil;
-    [self.subItemViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (view.alpha > 0) {
-            CGRect rect = [self convertRect:view.frame fromView:view.superview];
-            if (CGRectContainsPoint(rect, point)) {
-                targetView = view;
-                *stop = YES;
-            }
-        }
-    }];
-    
-    if (targetView) {
-        [self.subItemViews exchangeObjectAtIndex:[self.subItemViews indexOfObject:targetView] withObjectAtIndex:[self.subItemViews indexOfObject:self.movView]];
-        [self refreshSubItemPosition];
-        [self bringSubviewToFront:self.iv];
-    }
-}
-
--(void)yh_LongPressDragGestureEnd{
-    [self.iv removeFromSuperview];
-    self.iv.transform = CGAffineTransformIdentity;
-    self.movView.alpha = 1;
+-(void)setViews: (NSArray<UIView*>*)views
+         colNum: (NSInteger)colNum
+      itemWidth: (CGFloat)itemWidth
+     itemHeight: (CGFloat)itemHeight
+     edgeInsets: (UIEdgeInsets)edgeInsets{
+    [self setViews:views colNum:colNum itemWidth:itemWidth itemSpacing:0 itemHeight:itemHeight edgeInsets:edgeInsets];
 }
 
 -(void)setViews: (NSArray<UIView*>*)views
@@ -101,16 +42,16 @@
      itemHeight: (CGFloat)itemHeight
      edgeInsets: (UIEdgeInsets)edgeInsets{
     [self.subItemViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    self.subItemViews = [NSMutableArray arrayWithArray:views];
-    
-    if (self.subItemViews.count % colNum > 0) {
-        NSInteger count = colNum - (self.subItemViews.count % colNum);
+    NSMutableArray *subItemViews = [NSMutableArray arrayWithArray:views];
+    if (subItemViews.count % colNum > 0) {
+        NSInteger count = colNum - (subItemViews.count % colNum);
         for(int i = 0 ; i < count; i++){
             UIView *itemView = [[UIView alloc] init];
             itemView.alpha = 0;
-            [self.subItemViews addObject:itemView];
+            [subItemViews addObject:itemView];
         }
     }
+    self.subItemViews = subItemViews;
     
     _colNum = colNum;
     _itemWidth = itemWidth;
@@ -118,7 +59,6 @@
     _itemHeight = itemHeight;
     _edgeInsets = edgeInsets;
     
-    [self.subItemViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.subItemViews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
         [self addSubview:view];
     }];
@@ -162,11 +102,5 @@
     }];
 }
 
-- (UIImageView *)iv{
-    if (_iv == nil) {
-        _iv = [[UIImageView alloc] init];
-    }
-    return _iv;
-}
 
 @end

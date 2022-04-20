@@ -11,7 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol YHLongPressDragGestureDelegate <NSObject>
 
--(BOOL)yh_LongPressDragGestureBegin: (CGPoint)point;
+-(BOOL)yh_LongPressDragGestureRecognize: (CGPoint)point;
+-(void)yh_LongPressDragGestureBegin: (CGPoint)point;
 -(void)yh_LongPressDragGestureMove: (CGPoint)point;
 -(void)yh_LongPressDragGestureEnd;
 

@@ -6,8 +6,9 @@
 //
 
 #import "YHLongPressDragGestureRecognizer.h"
+#import "YHDragSortBaseView.h"
 
-@interface YHLongPressDragGestureRecognizer()<UIGestureRecognizerDelegate>
+@interface YHLongPressDragGestureRecognizer()
 
 @property (nonatomic, assign) CGPoint touchBeginPoint;
 
@@ -17,7 +18,7 @@
 
 -(instancetype)init{
     if (self = [super initWithTarget:self action:@selector(longPress:)]) {
-        self.delegate = self;
+
     }
     return self;
 }
@@ -25,6 +26,7 @@
 - (void)longPress: (UILongPressGestureRecognizer*)sender{
     switch (sender.state) {
         case UIGestureRecognizerStateBegan:
+            [self.movDelegate yh_LongPressDragGestureBegin:self.touchBeginPoint];
             break;
         case UIGestureRecognizerStateChanged:
             break;
@@ -40,22 +42,18 @@
     }
 }
 
--(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    return [self.movDelegate yh_LongPressDragGestureBegin:self.touchBeginPoint];
-}
-
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [super touchesBegan:touches withEvent:event];
-    
     UITouch *touch = touches.anyObject;
     CGPoint point = [touch locationInView:self.view];
     
     self.touchBeginPoint = point;
+    if ([self.movDelegate yh_LongPressDragGestureRecognize:point]) {
+        [super touchesBegan:touches withEvent:event];
+    }
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [super touchesMoved:touches withEvent:event];
-    
     if (self.state == UIGestureRecognizerStateBegan || self.state == UIGestureRecognizerStateChanged) {
         UITouch *touch = touches.anyObject;
         CGPoint point = [touch locationInView:self.view];
