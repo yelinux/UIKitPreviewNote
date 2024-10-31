@@ -12,4 +12,14 @@ pod 'Masonry'
 pod 'IQKeyboardManager'
 pod 'MLeaksFinder', :git => 'https://github.com/Tencent/MLeaksFinder'
 
+post_install do |installer|
+    installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+               end
+          end
+   end
+end
+  
 end

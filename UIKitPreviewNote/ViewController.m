@@ -19,6 +19,11 @@
 #import "SearchControllerTestVC.h"
 #import "ViewTransitionAnimVC.h"
 #import "StackMovTestVC.h"
+#import "StretchableImageTestVC.h"
+#import "ResizableImageTestVC.h"
+#import "GradientTestVC.h"
+#import "AVPlayerTestVC.h"
+#import "DrawShapTestVC.h"
 
 @interface ViewController ()
 
@@ -34,8 +39,8 @@
     self.title = @"UIKit 预览&笔记";
     
     //替换系统的“<"图标
-//       [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"fan_hui.png"]];
-//       [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"fan_hui.png"]];
+    //       [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"fan_hui.png"]];
+    //       [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"fan_hui.png"]];
     //其实设置无效，无法显示自定义btn
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.btnBack];
     //只能设置
@@ -108,6 +113,32 @@
     StackMovTestVC *vc = [[StackMovTestVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (IBAction)click12:(id)sender {
+    StretchableImageTestVC *vc = [[StretchableImageTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click13:(id)sender {
+    ResizableImageTestVC *vc = [[ResizableImageTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click14:(id)sender {
+    GradientTestVC *vc = [[GradientTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click15:(id)sender {
+    AVPlayerTestVC *vc = [[AVPlayerTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)click16:(id)sender {
+    DrawShapTestVC *vc = [[DrawShapTestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 // Mark - Getter
 -(UIButton *)btnBack{
